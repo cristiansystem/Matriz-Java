@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Program {
+    public static void main(String[] args)
+    {
+        
+        Integer[][] matriz = new Integer[3][4];
+        Scanner lector = new Scanner(System.in);
+        for(int f=0; f<3; f++)
+        {
+            for(int c=0; c<4; c++)
+            {
+                System.out.println("Digite numero");
+                matriz[f][c] = lector.nextInt();
+            }
+        }
+        multiplo(matriz);
+        
+    }
+    public static void multiplo(Integer[][] matriz)
+    {
+        for(int f=0; f<3; f++)
+        {
+            for(int c=0; c<4; c++)
+            {
+                matriz[f][c] = matriz[f][c]*3;
+                System.out.print(matriz[f][c]+",");
+            }
+        }
+        
+    }
+}
